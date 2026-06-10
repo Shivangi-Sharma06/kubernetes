@@ -1,0 +1,26 @@
+# this is a yaml
+
+ # employee:
+#    - name: piyush
+#     age: 34
+#    address: 108 
+#    - name: hulu   #this is used to create a list
+#    age: 50
+#    address: 110
+#    - name: yulu
+#      age: 49
+#     address: 
+#      -old: 7289   #also supports the nested data types
+#      -new: 9849
+#
+#
+#
+#
+#
+
+
+# from here real yaml starts
+
+
+
+

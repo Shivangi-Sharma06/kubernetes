@@ -6,7 +6,7 @@ COPY . .
 
 RUN yarn install #can add any env name
 
-CMD["node", "src/index.js"]
+CMD ["node", "src/index.js"]
 
 EXPOSE 3000
 

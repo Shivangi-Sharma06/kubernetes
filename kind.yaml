@@ -1,0 +1,14 @@
+kind: Cluster
+apiVersion: kind.x-k8s.io/v1alpha4
+nodes:
+- role: control-plane
+  extraPortMappings:
+  - containerPort: 30001
+    hostPort: 30001
+- role: worker
+- role: worker
+
+
+#this is generally not needed in an aws thing but we are working locally so we need to do the port binding and define the kind things here in this file
+#then you will run the kind create cluster command so the services do connect internally to this thing
+

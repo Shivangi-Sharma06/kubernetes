@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:      #ye metadata bhi rc ka h
+  name: nginx-rs
+  labels:
+    env: demo
+spec:      #ye spec rc ka h
+  template:
+      metadata:   #ye sab metadata pod ka h 
+        labels:
+          env: demo
+        name: nginx
+      spec:           #ye sab spec bhi pod ka h
+        containers:
+          - image: nginx
+            name: nginx
+  replicas: 3 #this is the number of replicas you want
+  selector:
+    matchLabels: 
+      env: demo

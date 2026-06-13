@@ -1,7 +1,7 @@
 apiVersion: apps/v1
-kind: ReplicaSet
+kind: DaemonSet
 metadata:      
-  name: nginx-deployemnt
+  name: nginx-ds
   labels:
     env: demo
 spec:      
@@ -14,7 +14,7 @@ spec:
         containers:
           - image: nginx
             name: nginx
-  replicas: 3 #this is the number of replicas you want
+ # replicas: 3  #this is the number of replicas you want    no need in daemon
   selector:
     matchLabels: 
       env: demo
